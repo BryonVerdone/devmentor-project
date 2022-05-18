@@ -1,6 +1,6 @@
 import React from 'react';
 import Seo from '../../seo';
-export default function AboutUS() {
+export default function AboutUS({}) {
   return (
     <>
       <Seo title={'About us'} />
