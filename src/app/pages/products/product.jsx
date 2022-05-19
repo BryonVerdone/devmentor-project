@@ -1,21 +1,16 @@
 import React, { useState } from 'react';
 import './styles.css';
+import ColorOptions from './color-options';
 export default function Product({ name, size, styles, colors }) {
   const [selectedColor, setSelectedColor] = useState(colors[0]);
   return (
     <div className='product'>
       <div className='name'>{name}</div>
-      <div className='colors'>
-        Available in:
-        {colors.map((color) => (
-          <span
-            className={`color ${selectedColor === color ? 'selected' : null}`}
-            onClick={() => setSelectedColor(color)}
-          >
-            {color.name}
-          </span>
-        ))}
-      </div>
+      <ColorOptions
+        colors={colors}
+        selectedColor={selectedColor}
+        setSelectedColor={setSelectedColor}
+      />
       <img
         width={400}
         height={400}
