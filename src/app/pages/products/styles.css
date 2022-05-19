@@ -1,0 +1,18 @@
+.colors {
+  margin: 1rem;
+}
+
+.color {
+  padding: 0.5rem 1rem;
+  margin: 0.25rem;
+  border: 1px solid grey;
+  background: lightgrey;
+  border-radius: 3px;
+}
+
+.colors .color.selected {
+  border: 1px solid blue;
+
+  background: skyblue;
+  border-radius: 3px;
+}
